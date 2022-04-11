@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="background-image" >
+            <img src="/images/side-image-2x.jpg" alt="">
+        </section>
+        <div>
+            <img id="logo" src="/images/logo.svg" alt="Logo">
+        </div>
+        <section id="tela-login">
+            <div id="form-container">
+                <div id="form-title">
+                    <h1 id="login-title">
+                        <img src="/images/log-in.svg" alt="icone-login"> Faça seu login
+                    </h1>
+                    <p id="login-subtitle">Entre com suas informações de cadastro.</p>
+                </div>
+                <form action="login" id="login"></form>
+                <!--Input de e-mail-->
+                    <label for="e-mail">E-mail</label>
+                    <div id="email">
+                        <i><img id="icone-email" src="/images/mail.svg" alt=""></i>
+                        <input id="email-text" type="email" name="email" placeholder="Digite seu email ">
+                    </div>
+                <!--Input de senha-->
+                    <label for="password">Senha</label>
+                    <div id="password">
+                        <i><img id="icone-password" src="/images/lock.svg" alt=""></i>
+                        <input id="password-text" type="password" name="password" placeholder=" Digite sua senha">
+                    </div>
+                <!--Input checkbox-->
+                    <div id="remember-container">
+                        <label class="switch"  for="remember-me">
+                            <div class="switch-wrapper">
+                                <input  type="checkbox" name="remember-me" id="remember-me">
+                                <span class="switch-button"></span>
+                            </div>
+                            <span class="switch-text">Lembre-me</span> 
+                        </label>
+                        <a id="lost-password" href="/">Esqueci minha senha</a>
+                    </div>
+                <!--Link de esqueci a senha-->
+                    
+                <!--Botão de entrar-->
+                    <button id="login-btn">ENTRAR</button>
+                </form>
+                    <p id="register">Não tem uma conta?<a href="/">Registre-se</a></p> 
+            </div>
+        </section>
+        
+    </main>
+    <script src="/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-base);
+    background:var(--background); 
+}
+#background-image{  
+    position: fixed;
+    left: 50%;
+    min-width: 1800px;
+    
+}
+#background-image img{ 
+    height:100vh;
+    width: 50vw;
+}
+#logo{
+   margin: 20px;
+}
+#tela-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--form-background);
+    margin-left:calc(15%/2);
+    margin-right:57.5%;
+    margin-top: 20px;
+    padding:25px;
+}
+#form-container{
+   display: flex;
+   flex-direction: column;
+}
+@media (max-width:1000px) {
+    body{
+        margin:none;
+        display: flex;
+        flex-direction: column;
+    }
+    #background-image{
+        display:none;
+    }
+   #tela-login{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width:82.5%;
+        
+   }
+   
+   
+   #logo{
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+   }
+}
+
+
+
+#login-title{
+    display: flex;
+    gap: 10px;
+    color: var(--text-title);
+}
+#login{
+    display: flex;
+    margin-top: 20px;
+}
+
+#email{
+    display: flex;
+    align-items: center;
+    padding:10px 10px 10px;
+    background: none;
+    border:#3a3732 solid 1px;
+    border-radius:3px;
+    margin-bottom:15px;
+}
+#email::placeholder{
+    padding-left:30px;
+}
+
+#email:focus-within{
+    border: 2px solid #ffc632;
+    outline: none;
+}
+#email-text{
+    background:none;
+    color:var(--text-base);
+    border: none;
+    outline: none;
+    padding:10px 10px 10px;
+    font-size: 1em;
+}
+#password{
+    display: flex;
+    align-items: center;
+    padding:10px 10px 10px;
+    background: none;
+    border:#3a3732 solid 1px;
+    border-radius:3px;
+    margin-bottom:15px;
+}
+#password::placeholder{
+    padding-left:30px;
+}
+#password:focus-within{
+    border: 2px solid #ffc632;
+    outline: none;
+}
+#password-text{
+    color:var(--text-base);
+    background:none;
+    color:none;
+    border: none;
+    outline: none;
+    padding:10px 10px 10px;
+    font-size: 1em;
+}
+#remember-container{
+    display:flex;
+    justify-content:space-between;
+}
+.switch{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+.switch .switch-wrapper{
+    display:inline-block;
+    width:30px;
+    height:17px;
+    position:relative;
+}
+.switch .switch-wrapper .switch-button{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:40px;
+    background-color:var(--text-base);
+}
+.switch .switch-wrapper input{
+    opacity: 0;
+    width:0;
+    height:0;
+}
+.switch .switch-text{
+    padding-left: 0.3rem;
+}
+.switch .switch-wrapper .switch-button::before{
+    content:"";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    border-radius:50%;
+    transition: .4s all ease-in;
+    background-color:var(--background);
+}
+.switch .switch-wrapper input:checked + .switch-button {
+    background-color: #ffc632;
+}
+.switch .switch-wrapper input:checked + .switch-button::before{
+    transform: translateX(13px);
+}
+a{
+    text-decoration:none;
+    color: var(--primary-color);
+}
+a:visited{
+    color: var(--primary-color);
+}
+#lost-password{
+    margin-top: 10px;
+    margin-bottom:10px;
+     
+}
+#login-btn{
+    height:50px;
+    background-color: var(--primary-color);
+    border:none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+#login-btn:hover{
+    opacity: 80%;
+}
+#register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}    
